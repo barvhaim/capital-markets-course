@@ -1,0 +1,250 @@
+.about-page {
+  width: 100%;
+  min-height: calc(100vh - 200px);
+  padding: 0;
+  margin: -2rem;
+  background: transparent;
+}
+
+@media (max-width: 768px) {
+  .about-page {
+    margin: -1rem;
+  }
+}
+
+.about-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-backdrop);
+  -webkit-backdrop-filter: var(--glass-backdrop);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-premium);
+  padding: 3rem;
+  transition: all 0.3s var(--ease-bounce);
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid var(--border);
+}
+
+.about-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+@media (prefers-color-scheme: dark) {
+  .about-header h1 {
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+.about-subtitle {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+}
+
+.about-section {
+  margin-bottom: 3rem;
+}
+
+.about-section h2 {
+  font-size: 1.75rem;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--border);
+  background: none !important;
+  -webkit-text-fill-color: var(--primary) !important;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.about-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.about-list li {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-primary);
+  padding: 0.75rem 0 0.75rem 2rem;
+  position: relative;
+}
+
+.about-list li::before {
+  content: "✓";
+  position: absolute;
+  right: 0;
+  color: var(--secondary);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.course-structure {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.structure-item {
+  text-align: center;
+  padding: 2rem 1.5rem;
+  background: var(--glass-bg);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--glass-border);
+  transition: all 0.3s var(--ease-bounce);
+}
+
+.structure-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-premium-lg);
+  border-color: var(--primary);
+  background: var(--glass-bg-heavy);
+}
+
+.structure-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.structure-item h3 {
+  font-size: 1.25rem;
+  color: var(--primary);
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+  background: none !important;
+  -webkit-text-fill-color: var(--primary) !important;
+}
+
+.structure-item p {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.disclaimer-section {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-backdrop);
+  -webkit-backdrop-filter: var(--glass-backdrop);
+  padding: 2rem;
+  border-radius: var(--radius-2xl);
+  border: 1px solid var(--glass-border);
+  border-right: 4px solid var(--accent);
+  box-shadow: var(--shadow-premium);
+}
+
+.disclaimer-box {
+  background: var(--glass-bg-heavy);
+  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--glass-border);
+}
+
+.disclaimer-box p {
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.disclaimer-box p:last-child {
+  margin-bottom: 0;
+}
+
+.disclaimer-box strong {
+  color: var(--accent);
+}
+
+.contact-section {
+  text-align: center;
+  background: var(--glass-bg);
+  padding: 2rem;
+  border-radius: var(--radius-2xl);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-premium);
+}
+
+.contact-info {
+  margin-top: 1.5rem;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+  margin: 0.75rem 0;
+  color: var(--text-primary);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 2rem 1.5rem;
+    margin: 1rem;
+  }
+
+  .about-header h1 {
+    font-size: 2rem;
+  }
+
+  .about-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .about-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-section p,
+  .about-list li {
+    font-size: 1rem;
+  }
+
+  .course-structure {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .structure-item {
+    padding: 1.5rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-container {
+    padding: 1.5rem 1rem;
+    border-radius: var(--radius-xl);
+    margin: 0.5rem;
+  }
+
+  .about-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .about-header h1 {
+    font-size: 1.75rem;
+  }
+
+  .about-section {
+    margin-bottom: 2rem;
+  }
+}

@@ -88,7 +88,6 @@ function About() {
             יש לך שאלות או הצעות לשיפור? נשמח לשמוע ממך!
           </p>
           <div className="contact-info">
-            <p>📧 Email: info@capital-markets-course.com</p>
             <p>💬 נשמח לקבל משוב על הקורס ולשפר אותו</p>
           </div>
         </section>

@@ -139,11 +139,8 @@ function Terms() {
         <section className="about-section">
           <h2>13. יצירת קשר</h2>
           <p>
-            לשאלות או הבהרות בנוגע לתנאי השימוש, ניתן ליצור קשר:
+            לשאלות או הבהרות בנוגע לתנאי השימוש, ניתן ליצור קשר דרך האתר.
           </p>
-          <div className="contact-info">
-            <p>📧 Email: info@capital-markets-course.com</p>
-          </div>
         </section>
 
         <section className="about-section">

@@ -5,6 +5,7 @@ import Sidebar from './components/layout/Sidebar'
 import Footer from './components/layout/Footer'
 import LessonContainer from './components/lessons/LessonContainer'
 import About from './components/pages/About'
+import Terms from './components/pages/Terms'
 import GoogleAnalytics from './components/GoogleAnalytics'
 import './styles/variables.css'
 import './styles/rtl.css'
@@ -63,6 +64,7 @@ function App() {
               <Route path="/" element={<Navigate to="/lesson/1" replace />} />
               <Route path="/lesson/:lessonId" element={<LessonContainer />} />
               <Route path="/about" element={<About />} />
+              <Route path="/terms" element={<Terms />} />
               <Route path="*" element={<Navigate to="/lesson/1" replace />} />
             </Routes>
           </main>

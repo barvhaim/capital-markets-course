@@ -23,7 +23,7 @@ function Footer() {
         <div className="footer-section footer-links">
           <Link to="/about" className="footer-link">אודות</Link>
           <span className="footer-separator">•</span>
-          <a href="#" className="footer-link">תנאי שימוש</a>
+          <Link to="/terms" className="footer-link">תנאי שימוש</Link>
           <span className="footer-separator">•</span>
           <a href="#" className="footer-link">פרטיות</a>
           <span className="footer-separator">•</span>

@@ -26,7 +26,7 @@ An interactive educational platform for learning about capital markets, built wi
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/barvhaim/capital-markets-course.git
 cd capital-markets-course
 ```
 

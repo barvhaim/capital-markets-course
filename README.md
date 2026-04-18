@@ -137,6 +137,34 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 This project is private and not licensed for public use.
 
+## 🚀 Deployment
+
+This project is configured for deployment to GitHub Pages.
+
+### Automatic Deployment
+
+The project includes a GitHub Actions workflow that automatically builds and deploys to GitHub Pages on every push to the `master` branch.
+
+### Setup GitHub Pages
+
+1. Go to your repository settings on GitHub
+2. Navigate to **Settings** → **Pages**
+3. Under **Source**, select **GitHub Actions**
+4. Push your changes to the `master` branch
+5. The site will be automatically deployed to: `https://barvhaim.github.io/capital-markets-course/`
+
+### Manual Deployment
+
+To build and deploy manually:
+
+```bash
+# Build the project
+npm run build
+
+# The built files will be in the 'dist' directory
+# Deploy the 'dist' directory to your hosting service
+```
+
 ## 📧 Contact
 
 For questions or feedback, please open an issue in the repository.

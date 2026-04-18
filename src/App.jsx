@@ -5,8 +5,12 @@ import Sidebar from './components/layout/Sidebar'
 import Footer from './components/layout/Footer'
 import LessonContainer from './components/lessons/LessonContainer'
 import About from './components/pages/About'
+import GoogleAnalytics from './components/GoogleAnalytics'
 import './styles/variables.css'
 import './styles/rtl.css'
+
+// Google Analytics Measurement ID - Replace with your own
+const GA_MEASUREMENT_ID = import.meta.env.VITE_GA_MEASUREMENT_ID || 'G-XXXXXXXXXX'
 
 function ScrollToTop() {
   const { pathname } = useLocation()
@@ -48,6 +52,7 @@ function App() {
 
   return (
     <Router>
+      <GoogleAnalytics measurementId={GA_MEASUREMENT_ID} />
       <ScrollToTop />
       <div className="app" dir="rtl">
         <Header toggleSidebar={toggleSidebar} />

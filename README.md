@@ -137,6 +137,27 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 This project is private and not licensed for public use.
 
+## 📊 Analytics
+
+This project includes Google Analytics (GA4) integration to track visitor statistics and user behavior.
+
+### Setup Instructions
+
+Follow the detailed guide in [ANALYTICS_SETUP.md](./ANALYTICS_SETUP.md) to:
+1. Create a Google Analytics account
+2. Get your Measurement ID
+3. Configure the project
+4. View your analytics data
+
+**Quick Setup:**
+```bash
+# Copy the example environment file
+cp .env.example .env
+
+# Edit .env and add your Google Analytics Measurement ID
+VITE_GA_MEASUREMENT_ID=G-XXXXXXXXXX
+```
+
 ## 🚀 Deployment
 
 This project is configured for deployment to GitHub Pages.

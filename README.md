@@ -137,11 +137,10 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 This project is private and not licensed for public use.
 
-## 📊 Analytics
+## 📊 Analytics & SEO
 
-This project includes Google Analytics (GA4) integration to track visitor statistics and user behavior.
-
-### Setup Instructions
+### Google Analytics (GA4)
+This project includes Google Analytics integration to track visitor statistics and user behavior.
 
 Follow the detailed guide in [ANALYTICS_SETUP.md](./ANALYTICS_SETUP.md) to:
 1. Create a Google Analytics account
@@ -157,6 +156,23 @@ cp .env.example .env
 # Edit .env and add your Google Analytics Measurement ID
 VITE_GA_MEASUREMENT_ID=G-XXXXXXXXXX
 ```
+
+### Search Engine Optimization (SEO)
+The site is fully optimized for search engines with:
+- ✅ Comprehensive meta tags (title, description, keywords)
+- ✅ Open Graph tags for social media sharing
+- ✅ Structured data (JSON-LD) for rich search results
+- ✅ robots.txt for search engine crawlers
+- ✅ sitemap.xml with all pages
+- ✅ Hebrew language optimization
+
+**Submit to Google:**
+Follow the step-by-step guide in [SEO_GUIDE.md](./SEO_GUIDE.md) to:
+1. Set up Google Search Console
+2. Submit your sitemap
+3. Request indexing
+4. Monitor search performance
+5. Optimize for better rankings
 
 ## 🚀 Deployment
 
